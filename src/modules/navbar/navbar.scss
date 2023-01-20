@@ -1,0 +1,64 @@
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5rem;
+  height: 100vh;
+  border-right: solid #525357 2px;
+}
+
+.logo {
+  width: 2rem;
+}
+
+.icon {
+  margin-top: 2rem;
+  margin-bottom: 30vh;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: linear-gradient(145deg, #9d1fff, #841ad8);
+  box-shadow: 5px 5px 20px #7d19cc, -5px -5px 20px #a921ff;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.inactive {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.inactive:hover {
+  animation: hover 2s infinite;
+}
+
+@keyframes hover {
+  0% {
+    box-shadow: 5px 5px 20px #7e19cc00;
+  }
+  50% {
+    box-shadow: 5px 5px 20px #7d19cc;
+  }
+  100% {
+    box-shadow: 5px 5px 20px #7e19cc00;
+  }
+}
+
+.iconButton {
+  width: 1.5rem;
+}
+
+.sectionButtons {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
